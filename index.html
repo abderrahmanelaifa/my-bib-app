@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Site Vitrine - Test GitHub Pages</title>
+    <style>
+        /* Styles Globaux */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Barre de navigation */
+        header {
+            background-color: #2c3e50;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Principale (Hero) */
+        .hero {
+            background: linear-gradient(135deg, #2c3e50, #1abc9c);
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: #2c3e50;
+            padding: 12px 24px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: transform 0.2s, background-color 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            background-color: #e8f8f5;
+        }
+
+        /* Section Services / Présentation */
+        .services {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .services h3 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h4 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+
+        /* Pied de page */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MonProjet_Alpha</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#services">Services</a>
+            <a href="mailto:votre-email@example.com">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="accueil">
+        <h2>Bienvenue sur mon site vitrine</h2>
+        <p>Si vous voyez cette page en ligne, cela signifie que le test d'hébergement sur GitHub Pages est un succès total ! 🚀</p>
+        <a href="#services" class="btn">Découvrir mes services</a>
+    </section>
+
+    <section class="services" id="services">
+        <h3>Nos Services</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>Design Moderne</h4>
+                <p>Une interface épurée et responsive qui s'adapte parfaitement à tous les types d'écrans (PC, tablettes, smartphones).</p>
+            </div>
+            <div class="card">
+                <h4>Hébergement Rapide</h4>
+                <p>Propulsé par GitHub Pages, garantissant un temps de chargement optimal et une sécurité maximale pour vos fichiers statiques.</p>
+            </div>
+            <div class="card">
+                <h4>Code Propre</h4>
+                <p>Une structure HTML5 et CSS3 simplifiée, idéale pour servir de base à des projets de développement plus complexes.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 MonProjet_Alpha. Propulsé avec succès par GitHub Pages.</p>
+    </footer>
+
+</body>
+</html>
